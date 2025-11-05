@@ -30,7 +30,7 @@ const columns = [
     links: [
       { label: 'privacy', href: '/privacy' },
       { label: 'terms', href: '/terms' },
-      { label: 'data policy', href: '/privacy' }
+      { label: 'data deletion', href: '/data-deletion' }
     ]
   }
 ];
