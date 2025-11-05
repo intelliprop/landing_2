@@ -14,7 +14,7 @@ export default function FeatureCards({ cards }: { cards: Card[] }) {
               src={c.image || defaultImages[index] || '/property-hero.jpg'} 
               alt={c.title} 
               fill
-              className="object-cover"
+              className="object-cover filter saturate-0 contrast-110"
             />
           </div>
           <div className="p-6">

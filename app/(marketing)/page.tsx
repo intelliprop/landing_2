@@ -7,8 +7,14 @@ export default function HomePage() {
   return (
     <>
       <Section className="text-center">
-        <div className="mb-8 rounded-2xl overflow-hidden">
-          <Image src="/property-hero.jpg" alt="Modern property and real estate" width={1200} height={600} className="w-full h-auto object-cover" />
+        <div className="mb-8 rounded-2xl overflow-hidden relative h-48 md:h-64">
+          <Image
+            src="/property-hero.jpg"
+            alt="Modern property and real estate"
+            fill
+            className="object-cover"
+            priority
+          />
         </div>
         <h1 className="h1 text-primary">intelliprop turns data into clarity.</h1>
         <p className="lead mt-4 max-w-2xl mx-auto">from buyer briefs to property analysis, our intelliscore™ delivers insight fast.</p>

@@ -42,10 +42,10 @@ export default function Footer() {
         {columns.map(col => (
           <div key={col.title}>
             <div className="font-semibold mb-3">{col.title}</div>
-            <ul className="space-y-2 text-teal-500">
+            <ul className="space-y-2 text-ink">
               {col.links.map(link => (
                 <li key={link.label}>
-                  <Link href={link.href} className="hover:opacity-80">{link.label}</Link>
+                  <Link href={link.href} className="hover:text-primary">{link.label}</Link>
                 </li>
               ))}
             </ul>

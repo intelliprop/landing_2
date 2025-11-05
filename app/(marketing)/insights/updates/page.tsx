@@ -12,7 +12,7 @@ export default function UpdatesIndex() {
       <ul className="space-y-4">
         {updates.map(u => (
           <li key={u.slug}>
-            <a className="text-teal-500" href={`/insights/updates/${u.slug}`}>{u.title}</a>
+            <a className="text-primary hover:underline" href={`/insights/updates/${u.slug}`}>{u.title}</a>
             <div className="text-muted">{u.summary}</div>
           </li>
         ))}

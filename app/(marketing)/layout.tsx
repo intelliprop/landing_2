@@ -5,7 +5,12 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'intelliprop',
-  description: 'intelliprop turns data into clarity.'
+  description: 'intelliprop turns data into clarity.',
+  icons: {
+    icon: '/applogo.png',
+    shortcut: '/applogo.png',
+    apple: '/applogo.png'
+  }
 };
 
 export default function MarketingLayout({ children }: { children: ReactNode }) {
