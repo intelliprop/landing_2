@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 10px;
+}
+
+html, body {
+  @apply bg-bg text-ink antialiased;
+}
+
+.container-page {
+  @apply max-w-6xl mx-auto px-4;
+}
+
+.h1 {
+  @apply text-4xl md:text-6xl font-extrabold tracking-tight;
+}
+.h2 { @apply text-3xl md:text-4xl font-bold; }
+.lead { @apply text-muted md:text-lg; }
+
+
