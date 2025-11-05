@@ -16,8 +16,8 @@ export default function HomePage() {
             priority
           />
         </div>
-        <h1 className="h1 text-primary">intelliprop turns data into clarity.</h1>
-        <p className="lead mt-4 max-w-2xl mx-auto">from buyer briefs to property analysis, our intelliscore™ delivers insight fast.</p>
+        <h1 className="h1 text-primary">property intelligence, instantly.</h1>
+        <p className="lead mt-4 max-w-2xl mx-auto">turn any address or brief into a clear, decision-ready report in minutes—not days.</p>
         <div className="mt-8">
           <Button href="#how-it-works">how it works</Button>
         </div>

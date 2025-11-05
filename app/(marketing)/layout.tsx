@@ -5,7 +5,7 @@ import Footer from '@/components/Footer';
 
 export const metadata = {
   title: 'intelliprop',
-  description: 'intelliprop turns data into clarity.',
+  description: 'Property intelligence, instantly. Turn any address or brief into a clear, decision-ready report in minutes—not days.',
   icons: {
     icon: '/applogo.png',
     shortcut: '/applogo.png',
