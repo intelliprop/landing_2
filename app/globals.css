@@ -11,13 +11,13 @@ html, body {
 }
 
 .container-page {
-  @apply max-w-6xl mx-auto px-4;
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 
 .h1 {
-  @apply text-4xl md:text-6xl font-extrabold tracking-tight;
+  @apply text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight;
 }
-.h2 { @apply text-3xl md:text-4xl font-bold; }
-.lead { @apply text-muted md:text-lg; }
+.h2 { @apply text-2xl sm:text-3xl md:text-4xl font-bold; }
+.lead { @apply text-muted text-base sm:text-lg; }
 
 

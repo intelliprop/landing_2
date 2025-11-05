@@ -7,18 +7,19 @@ export default function HomePage() {
   return (
     <>
       <Section className="text-center">
-        <div className="mb-8 rounded-2xl overflow-hidden relative h-48 md:h-64">
+        <div className="mb-6 sm:mb-8 rounded-2xl overflow-hidden relative h-40 sm:h-48 md:h-56 lg:h-64">
           <Image
             src="/property-hero.jpg"
             alt="Modern property and real estate"
             fill
             className="object-cover"
             priority
+            sizes="(max-width: 640px) 100vw, (max-width: 1024px) 100vw, 1200px"
           />
         </div>
-        <h1 className="h1 text-primary">property intelligence, instantly.</h1>
-        <p className="lead mt-4 max-w-2xl mx-auto">turn any address or brief into a clear, decision-ready report in minutes—not days.</p>
-        <div className="mt-8">
+        <h1 className="h1 text-primary px-4 sm:px-0">property intelligence, instantly.</h1>
+        <p className="lead mt-4 max-w-2xl mx-auto px-4 sm:px-0">turn any address or brief into a clear, decision-ready report in minutes—not days.</p>
+        <div className="mt-6 sm:mt-8">
           <Button href="#how-it-works">how it works</Button>
         </div>
       </Section>

@@ -58,9 +58,9 @@ export default function DataDeletionPage() {
             <p>requesting data deletion will also cancel your account and any active subscriptions. you will not be able to access your account or reports after deletion is complete.</p>
           </section>
 
-          <section className="rounded-2xl bg-bgAlt p-8 mt-8">
+          <section className="rounded-2xl bg-bgAlt p-6 sm:p-8 mt-6 sm:mt-8">
             <h2 className="h2 mb-4 text-ink">ready to proceed?</h2>
-            <p className="mb-6">send us an email to request data deletion:</p>
+            <p className="mb-6 text-sm sm:text-base">send us an email to request data deletion:</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button href="mailto:admin@intelliprop.com.au?subject=Data%20Deletion%20Request">send deletion request</Button>
               <Button href="/contact" variant="secondary">contact support</Button>
