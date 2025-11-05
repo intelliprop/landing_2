@@ -1,11 +1,15 @@
 import Button from '@/components/Button';
 import Section from '@/components/Section';
 import FeatureCards from '@/components/FeatureCards';
+import Image from 'next/image';
 
 export default function HomePage() {
   return (
     <>
       <Section className="text-center">
+        <div className="mb-8 rounded-2xl overflow-hidden">
+          <Image src="/property-hero.jpg" alt="Modern property and real estate" width={1200} height={600} className="w-full h-auto object-cover" />
+        </div>
         <h1 className="h1 text-primary">intelliprop turns data into clarity.</h1>
         <p className="lead mt-4 max-w-2xl mx-auto">from buyer briefs to property analysis, our intelliscore™ delivers insight fast.</p>
         <div className="mt-8">

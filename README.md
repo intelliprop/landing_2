@@ -26,8 +26,14 @@ See `app/(marketing)` for public pages: `/`, `/pricing`, `/generate-report`, `/i
 Assets
 ------
 Add/replace images inside `public/` as needed:
-- `logo.svg`, `favicon-512.png`, `og.png`
-- `placeholder-hero.jpg`, `placeholder-brief.jpg`, `placeholder-address.jpg`
+- `logo.png` - Company logo (used in Header)
+- `property-hero.jpg` - Hero image for homepage
+- `property-brief.jpg` - Image for brief report feature
+- `property-address.jpg` - Image for address report feature
+- `finance-analytics.jpg` - Finance/analytics themed image
+- `investment-chart.jpg` - Investment/chart themed image
+- `market-data.jpg` - Market data themed image
+- Legacy placeholders: `placeholder-hero.jpg`, `placeholder-brief.jpg`, `placeholder-address.jpg`
 
 Branding
 --------
