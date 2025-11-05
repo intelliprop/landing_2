@@ -8,6 +8,11 @@
 
 html, body {
   @apply bg-bg text-ink antialiased;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dark html, .dark body {
+  @apply bg-dark-bg text-dark-ink;
 }
 
 .container-page {
@@ -19,5 +24,13 @@ html, body {
 }
 .h2 { @apply text-2xl sm:text-3xl md:text-4xl font-bold; }
 .lead { @apply text-muted text-base sm:text-lg; }
+
+.dark .h1, .dark .h2 {
+  @apply text-dark-ink;
+}
+
+.dark .lead, .dark .text-muted {
+  @apply text-dark-muted;
+}
 
 

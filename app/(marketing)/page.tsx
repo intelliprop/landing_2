@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <>
       <Section className="text-center">
-        <div className="mb-6 sm:mb-8 rounded-2xl overflow-hidden relative h-40 sm:h-48 md:h-56 lg:h-64">
+        <div className="mb-4 sm:mb-6 rounded-2xl overflow-hidden relative h-36 sm:h-44 md:h-52 lg:h-60">
           <Image
             src="/property-hero.jpg"
             alt="Modern property and real estate"
@@ -18,8 +18,8 @@ export default function HomePage() {
           />
         </div>
         <h1 className="h1 text-primary px-4 sm:px-0">property intelligence, instantly.</h1>
-        <p className="lead mt-4 max-w-2xl mx-auto px-4 sm:px-0">turn any address or brief into a clear, decision-ready report in minutes—not days.</p>
-        <div className="mt-6 sm:mt-8">
+        <p className="lead mt-3 max-w-2xl mx-auto px-4 sm:px-0">turn any address or brief into a clear, decision-ready report in minutes—not days.</p>
+        <div className="mt-5 sm:mt-6">
           <Button href="#how-it-works">how it works</Button>
         </div>
       </Section>

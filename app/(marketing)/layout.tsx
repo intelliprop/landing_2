@@ -15,11 +15,11 @@ export const metadata = {
 
 export default function MarketingLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-bg dark:bg-dark-bg">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
       </head>
-      <body>
+      <body className="bg-bg dark:bg-dark-bg text-ink dark:text-dark-ink">
         <Header />
         <main>{children}</main>
         <Footer />
