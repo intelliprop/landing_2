@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 type Card = { title: string; body: string; image?: string; };
 
-const defaultImages = ['/property-brief.jpg', '/finance-analytics.jpg', '/investment-chart.jpg'];
+const defaultImages = ['/min-brief.svg', '/min-analytics.svg', '/min-investment.svg'];
 
 export default function FeatureCards({ cards }: { cards: Card[] }) {
   return (

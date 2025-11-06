@@ -37,16 +37,18 @@ export default function Header() {
     <header className="container-page py-4 sm:py-5">
       <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/applogo.png" alt="intelliprop" width={32} height={32} className="object-contain" />
+          <span className="inline-flex items-center justify-center rounded-md p-1 bg-white dark:bg-ink ring-1 ring-border dark:ring-dark-border">
+            <Image src="/applogo.png" alt="intelliprop" width={28} height={28} className="object-contain" />
+          </span>
           <span className="font-semibold text-lg sm:text-xl">intelliprop</span>
         </Link>
         
         {/* Desktop Navigation */}
         <nav className="hidden lg:flex items-center gap-4 text-ink dark:text-dark-ink">
-          <Link href="/" className="hover:text-primary transition-colors">product</Link>
-          <Link href="/pricing" className="hover:text-primary transition-colors">pricing</Link>
-          <Link href="/insights" className="hover:text-primary transition-colors">insights</Link>
-          <Link href="/resources" className="hover:text-primary transition-colors">resources</Link>
+          <Link href="/" className="hover:text-primary transition-colors">Product</Link>
+          <Link href="/pricing" className="hover:text-primary transition-colors">Pricing</Link>
+          <Link href="/insights" className="hover:text-primary transition-colors">Insights</Link>
+          <Link href="/resources" className="hover:text-primary transition-colors">Resources</Link>
           <button
             onClick={toggleDarkMode}
             className="p-2 rounded-full hover:bg-bgAlt dark:hover:bg-dark-bgAlt transition-colors"
@@ -62,13 +64,13 @@ export default function Header() {
               </svg>
             )}
           </button>
-          <Link href="/generate-report" className="ml-2 rounded-full bg-primary text-white text-sm px-4 py-2 hover:opacity-90 transition-opacity">generate a report</Link>
+          <Link href="/generate-report" className="ml-2 rounded-full bg-primary text-white text-sm px-4 py-2 hover:opacity-90 transition-opacity">Generate a report</Link>
         </nav>
 
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2 text-ink hover:text-primary transition-colors"
+          className="lg:hidden p-2 text-ink dark:text-dark-ink hover:text-primary transition-colors"
           aria-label="Toggle menu"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -85,17 +87,17 @@ export default function Header() {
       {mobileMenuOpen && (
         <nav className="lg:hidden mt-4 pb-4 border-t border-border dark:border-dark-border pt-4">
           <div className="flex flex-col gap-4">
-            <Link href="/" className="text-ink dark:text-dark-ink hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>product</Link>
-            <Link href="/pricing" className="text-ink dark:text-dark-ink hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>pricing</Link>
-            <Link href="/insights" className="text-ink dark:text-dark-ink hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>insights</Link>
-            <Link href="/resources" className="text-ink dark:text-dark-ink hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>resources</Link>
+            <Link href="/" className="text-ink dark:text-dark-ink hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Product</Link>
+            <Link href="/pricing" className="text-ink dark:text-dark-ink hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Pricing</Link>
+            <Link href="/insights" className="text-ink dark:text-dark-ink hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Insights</Link>
+            <Link href="/resources" className="text-ink dark:text-dark-ink hover:text-primary transition-colors py-2" onClick={() => setMobileMenuOpen(false)}>Resources</Link>
             <button
               onClick={() => { toggleDarkMode(); setMobileMenuOpen(false); }}
               className="text-left text-ink dark:text-dark-ink hover:text-primary transition-colors py-2 flex items-center gap-2"
             >
-              {darkMode ? 'light mode' : 'dark mode'}
+              {darkMode ? 'Light mode' : 'Dark mode'}
             </button>
-            <Link href="/generate-report" className="rounded-full bg-primary text-white text-sm px-4 py-2.5 hover:opacity-90 transition-opacity text-center mt-2" onClick={() => setMobileMenuOpen(false)}>generate a report</Link>
+            <Link href="/generate-report" className="rounded-full bg-primary text-white text-sm px-4 py-2.5 hover:opacity-90 transition-opacity text-center mt-2" onClick={() => setMobileMenuOpen(false)}>Generate a report</Link>
           </div>
         </nav>
       )}
