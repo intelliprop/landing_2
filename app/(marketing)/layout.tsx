@@ -6,11 +6,10 @@ import Footer from '@/components/Footer';
 export const metadata = {
   title: 'intelliprop',
   description: 'Property intelligence, instantly. Turn any address or brief into a clear, decision-ready report in minutes—not days.',
-  icons: {
-    icon: '/applogo.png',
-    shortcut: '/applogo.png',
-    apple: '/applogo.png'
-  }
+  icons: [
+    { rel: 'icon', url: '/applogo.png', media: '(prefers-color-scheme: light)' },
+    { rel: 'icon', url: '/applogo-dark.png', media: '(prefers-color-scheme: dark)' }
+  ]
 };
 
 export default function MarketingLayout({ children }: { children: ReactNode }) {

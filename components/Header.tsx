@@ -38,7 +38,12 @@ export default function Header() {
       <div className="flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2">
           <span className="inline-flex items-center justify-center rounded-md p-1 bg-white dark:bg-ink ring-1 ring-border dark:ring-dark-border">
-            <Image src="/applogo.png" alt="intelliprop" width={28} height={28} className="object-contain" />
+            <span className="block dark:hidden">
+              <Image src="/applogo.png" alt="intelliprop" width={28} height={28} className="object-contain" />
+            </span>
+            <span className="hidden dark:block">
+              <Image src="/applogo-dark.png" alt="intelliprop" width={28} height={28} className="object-contain" />
+            </span>
           </span>
           <span className="font-semibold text-lg sm:text-xl">intelliprop</span>
         </Link>
@@ -64,7 +69,7 @@ export default function Header() {
               </svg>
             )}
           </button>
-          <Link href="/generate-report" className="ml-2 rounded-full bg-primary text-white text-sm px-4 py-2 hover:opacity-90 transition-opacity">Generate a report</Link>
+          <Link href="https://platform.intelliprop.com.au" className="ml-2 rounded-full bg-primary text-white text-sm px-4 py-2 hover:opacity-90 transition-opacity">Generate a report</Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -97,7 +102,7 @@ export default function Header() {
             >
               {darkMode ? 'Light mode' : 'Dark mode'}
             </button>
-            <Link href="/generate-report" className="rounded-full bg-primary text-white text-sm px-4 py-2.5 hover:opacity-90 transition-opacity text-center mt-2" onClick={() => setMobileMenuOpen(false)}>Generate a report</Link>
+            <Link href="https://platform.intelliprop.com.au" className="rounded-full bg-primary text-white text-sm px-4 py-2.5 hover:opacity-90 transition-opacity text-center mt-2" onClick={() => setMobileMenuOpen(false)}>Generate a report</Link>
           </div>
         </nav>
       )}

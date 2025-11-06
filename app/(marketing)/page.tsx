@@ -7,7 +7,7 @@ export default function HomePage() {
   return (
     <>
       <Section className="text-center">
-        <div className="mb-4 sm:mb-6 rounded-2xl overflow-hidden relative h-36 sm:h-44 md:h-52 lg:h-60">
+        <div className="mb-4 sm:mb-6 rounded-2xl overflow-hidden relative h-36 sm:h-44 md:h-52 lg:h-60 anim-in">
           <Image
             src="/min-hero.svg"
             alt="Modern property and real estate"
@@ -35,7 +35,7 @@ export default function HomePage() {
       </Section>
 
       <Section title="Ready to get your Intelliscore™?" lead="See intelliprop in action. Discover what data‑driven clarity feels like." className="text-center">
-        <Button href="/generate-report">Generate a report</Button>
+        <Button href="https://platform.intelliprop.com.au">Generate a report</Button>
       </Section>
     </>
   );

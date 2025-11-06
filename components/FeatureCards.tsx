@@ -8,8 +8,8 @@ export default function FeatureCards({ cards }: { cards: Card[] }) {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
       {cards.map((c, index) => (
-        <div key={c.title} className="rounded-xl bg-bgAlt dark:bg-dark-bgAlt overflow-hidden border border-border dark:border-dark-border">
-          <div className="relative h-36 sm:h-40 w-full">
+        <div key={c.title} className="rounded-xl bg-bgAlt dark:bg-dark-bgAlt overflow-hidden border border-border dark:border-dark-border transition-transform hover:scale-[1.02] hover:shadow-md will-change-transform">
+          <div className="relative h-36 sm:h-40 w-full anim-in">
             <Image 
               src={c.image || defaultImages[index] || '/property-hero.jpg'} 
               alt={c.title} 
