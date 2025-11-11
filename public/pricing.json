@@ -1,0 +1,11 @@
+{
+  "currency": "AUD",
+  "tiers": [
+    { "id": "free_trial", "label": "Free", "priceLabel": "$0", "cta": "Get your free report", "comingSoon": false },
+    { "id": "single_report", "label": "Per Report", "priceLabel": "$19", "cta": "Buy a report", "comingSoon": false },
+    { "id": "starter_monthly", "label": "Starter", "priceLabel": "$49/mo", "cta": "Start with Starter", "comingSoon": false },
+    { "id": "pro_monthly", "label": "Pro", "priceLabel": "$199/mo", "cta": "Upgrade to Pro", "comingSoon": false },
+    { "id": "business_custom", "label": "Business", "priceLabel": "Custom", "cta": "Register interest", "comingSoon": true }
+  ]
+}
+

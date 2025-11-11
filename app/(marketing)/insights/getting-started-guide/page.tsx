@@ -97,7 +97,7 @@ export default function GettingStartedGuide() {
           <section className="rounded-2xl bg-bgAlt dark:bg-dark-bgAlt p-6 sm:p-8 border border-border dark:border-dark-border text-center">
             <h2 className="h2 mb-4 text-ink dark:text-dark-ink">Ready to get started?</h2>
             <p className="text-muted dark:text-dark-muted mb-6">Generate your first property intelligence report in minutes.</p>
-            <Button href="/generate-report">Generate a report</Button>
+            <Button href="https://platform.intelliprop.com.au">Generate a report</Button>
           </section>
         </div>
       </Section>

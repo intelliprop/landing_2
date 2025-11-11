@@ -1,39 +1,40 @@
 /**
  * Centralized copy for landing page
- * B2C-friendly, simple language for everyday property buyers
+ * B2C-focused: First-home buyers and early investors
+ * Clear, fast, affordable alternative to buyer's agents
  */
 
 export const copy = {
   hero: {
     lines: [
-      'Know if a property is right for you.',
-      'Before you make an offer.',
+      'Understand what you\'re buying.',
+      'Before you buy it.',
       'intelliprop.',
     ],
-    sub: 'Get a clear, easy-to-understand report on any property in minutes. No confusing jargon — just the facts you need to make a smart decision.',
+    sub: 'Turn confusing property data into clear, visual insights. See a property\'s potential, risks, and fit for your goals — in plain English, in 3 minutes, for $19.',
     ctaPrimary: 'Get my report',
     ctaGhost: 'See how it works',
   },
   mission: {
     title: 'our mission',
-    body: 'To make buying property simple, clear, and stress-free.',
-    sub: 'Buying a home or investment property is a big decision. We give you the information you need, in plain English, so you can feel confident.',
-    emphasized: ['simple', 'clear', 'stress-free'],
+    body: 'We help everyday Australians — first-home buyers and early investors — understand what they\'re buying before they buy.',
+    sub: 'We do this by turning confusing property data into clear, visual, human-readable insights that reveal a property\'s potential, risks, and fit for their goals. intelliprop makes property research clear, fast, and at a fraction of the cost of a buyer\'s agent.',
+    emphasized: ['clear', 'fast', 'affordable'],
   },
   howItWorks: {
     title: 'Choose your report type',
-    subtitle: 'We offer three ways to get the property information you need:',
+    subtitle: 'Three ways to get the property clarity you need:',
     reportTypes: [
       {
         id: 'brief',
         title: 'Property search brief',
-        description: 'Tell us what you\'re looking for and we\'ll show you a shortlist of properties that match. Perfect if you need help finding the right property.',
+        description: 'Tell us what you\'re looking for and we\'ll shortlist properties that match. Perfect if you don\'t know where to start your search.',
         icon: '🔍',
       },
       {
         id: 'property',
         title: 'Property analysis',
-        description: 'Paste a property address and get a detailed analysis. See if it\'s a good buy, what similar properties sold for, and what to watch out for.',
+        description: 'Paste a property address and get a clear analysis. See if it\'s a good buy, what similar properties sold for, and what to watch out for.',
         icon: '🏠',
       },
       {
@@ -45,60 +46,99 @@ export const copy = {
     ],
   },
   intelliscore: {
-    title: 'Your intelliscore — a simple score that tells you if a property is right for you.',
-    sub: 'Every report includes your intelliscore — a number from 0 to 100 that shows how well a property matches what you\'re looking for. The higher the score, the better the fit.',
+    title: 'Your intelliscore — one clear number that tells you if a property fits your goals.',
+    sub: 'Every report includes your intelliscore — a score from 0 to 100 that shows how well a property matches what you\'re looking for. No confusing spreadsheets or conflicting advice. Just one clear answer.',
     dimensions: ['growth potential', 'good place to live', 'rental income', 'things to watch'],
   },
   testimonials: {
     title: 'What people are saying',
     items: [
       {
-        quote: 'I had no idea how to tell if a property was a good deal. intelliprop made it so simple — I finally understood what I was looking at.',
+        quote: 'I was so overwhelmed trying to figure out if a property was worth it. intelliprop gave me one clear answer instead of hours of confusing research.',
         name: 'Alex M.',
         role: 'First home buyer',
       },
       {
-        quote: 'The report saved me from making a bad decision. It showed me things I never would have thought to check.',
+        quote: 'At $19, this is a no-brainer. I saved thousands by avoiding a bad property, and I finally understood what I was looking at.',
         name: 'Jordan K.',
-        role: 'Property buyer',
+        role: 'First home buyer',
       },
       {
-        quote: 'I love how easy it is to understand. No confusing charts or numbers — just clear answers to my questions.',
+        quote: 'I can\'t afford a buyer\'s agent, but I needed real insights. This gave me professional-level analysis without the price tag.',
         name: 'Sam T.',
-        role: 'Property investor',
+        role: 'Early investor',
       },
     ],
   },
   pricing: {
-    title: 'Choose your plan',
-    buyers: {
-      title: 'For buyers & investors',
-      price: '$19',
-      period: 'per report',
-      bullets: [
-        'One property report',
-        'Your intelliscore score',
-        'What similar properties sold for',
-        'Things to watch out for',
-      ],
-      cta: 'Get started',
-    },
-    brokers: {
-      title: 'For brokers & advisors',
-      price: '$149',
-      period: 'per month',
-      bullets: [
-        'Unlimited reports',
-        'White-label options',
-        'API access',
-        'Priority support',
-      ],
-      cta: 'Book a demo',
-    },
+    title: 'Simple, transparent pricing',
+    tiers: [
+      {
+        id: 'free_trial',
+        label: 'Free',
+        price: '$0',
+        period: '',
+        bullets: [
+          '1 report (watermarked)',
+        ],
+        cta: 'Try for Free',
+        highlight: false,
+        comingSoon: false,
+      },
+      {
+        id: 'single_report',
+        label: 'Per Report',
+        price: '$19',
+        period: '',
+        bullets: [
+          'Single full report',
+        ],
+        cta: 'Buy a Report',
+        highlight: false,
+        comingSoon: false,
+      },
+      {
+        id: 'starter_monthly',
+        label: 'Starter',
+        price: '$49',
+        period: '/mo',
+        bullets: [
+          'Up to 5 reports / month',
+        ],
+        cta: 'Start Now',
+        highlight: true,
+        comingSoon: false,
+      },
+      {
+        id: 'pro_monthly',
+        label: 'Pro',
+        price: '$199',
+        period: '/mo',
+        bullets: [
+          'Up to 40 reports / month',
+          'Branding + API',
+        ],
+        cta: 'Go Pro',
+        highlight: false,
+        comingSoon: false,
+      },
+      {
+        id: 'business_custom',
+        label: 'Business',
+        price: 'Custom',
+        period: '',
+        bullets: [
+          'Teams + CRM Integration',
+        ],
+        cta: 'Register Interest',
+        highlight: false,
+        comingSoon: true,
+      },
+    ],
     trust: [
-      'trusted by property professionals',
+      'clear, fast, and affordable',
       'reports ready in under 3 minutes',
-      'real property data you can trust',
+      'unbiased insights you can trust',
     ],
   },
   footer: {

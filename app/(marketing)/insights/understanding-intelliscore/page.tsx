@@ -142,7 +142,7 @@ export default function UnderstandingIntelliscore() {
           <section className="rounded-2xl bg-bgAlt dark:bg-dark-bgAlt p-6 sm:p-8 border border-border dark:border-dark-border text-center">
             <h2 className="h2 mb-4 text-ink dark:text-dark-ink">get your intelliscore™</h2>
             <p className="text-muted dark:text-dark-muted mb-6">generate a property report to see intelliscore™ in action.</p>
-            <Button href="/generate-report">generate a report</Button>
+            <Button href="https://platform.intelliprop.com.au">generate a report</Button>
           </section>
         </div>
       </Section>

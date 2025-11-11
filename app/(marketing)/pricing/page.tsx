@@ -9,7 +9,7 @@ export default function PricingPage() {
       <Section title="Pricing" lead="Modern, flexible pricing for every property journey.">
         <PricingTable />
       </Section>
-      <Section title="Compare all plans at a glance" lead="Choose the intelliprop plan that fits your workflow. Switch between monthly and yearly options, and easily upgrade or cancel anytime. Highlight: Professional unlocks unlimited reporting and analytics customization." />
+      <Section title="Compare all plans at a glance" lead="Choose the intelliprop plan that fits your property journey. Start with a free report, buy individual reports as needed, or subscribe for unlimited access. All plans include your intelliscore and clear, visual insights." />
     </>
   );
 }

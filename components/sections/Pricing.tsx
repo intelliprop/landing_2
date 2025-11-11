@@ -18,45 +18,52 @@ export default function Pricing() {
         whileInView="visible"
         viewport={{ once: true, margin: '-100px' }}
         variants={staggerChildren}
-        className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12"
+        className="grid md:grid-cols-2 lg:grid-cols-5 gap-6 max-w-7xl mx-auto mb-12"
       >
-        <motion.div variants={fadeInUp} transition={getTransition(0.4)}>
-          <Card className="text-center">
-            <h3 className="text-xl font-bold mb-2">{copy.pricing.buyers.title}</h3>
-            <div className="text-4xl font-bold mb-1">{copy.pricing.buyers.price}</div>
-            <div className="text-sm text-[var(--ip-muted)] mb-6">{copy.pricing.buyers.period}</div>
-            <ul className="text-left space-y-2 mb-6">
-              {copy.pricing.buyers.bullets.map((bullet, idx) => (
-                <li key={idx} className="flex items-start gap-2">
-                  <span className="text-[var(--ip-teal)]">✓</span>
-                  <span className="text-sm">{bullet}</span>
-                </li>
-              ))}
-            </ul>
-            <Button href="https://platform.intelliprop.com.au" variant="primary" className="w-full">
-              {copy.pricing.buyers.cta}
-            </Button>
-          </Card>
-        </motion.div>
-
-        <motion.div variants={fadeInUp} transition={getTransition(0.4, 0.1)}>
-          <Card className="text-center border-2 border-[var(--ip-teal)]">
-            <h3 className="text-xl font-bold mb-2">{copy.pricing.brokers.title}</h3>
-            <div className="text-4xl font-bold mb-1">{copy.pricing.brokers.price}</div>
-            <div className="text-sm text-[var(--ip-muted)] mb-6">{copy.pricing.brokers.period}</div>
-            <ul className="text-left space-y-2 mb-6">
-              {copy.pricing.brokers.bullets.map((bullet, idx) => (
-                <li key={idx} className="flex items-start gap-2">
-                  <span className="text-[var(--ip-teal)]">✓</span>
-                  <span className="text-sm">{bullet}</span>
-                </li>
-              ))}
-            </ul>
-            <Button href="/contact" variant="primary" className="w-full">
-              {copy.pricing.brokers.cta}
-            </Button>
-          </Card>
-        </motion.div>
+        {copy.pricing.tiers.map((tier, idx) => (
+          <motion.div
+            key={tier.id}
+            variants={fadeInUp}
+            transition={getTransition(0.4, idx * 0.1)}
+            className={tier.comingSoon ? 'opacity-60' : ''}
+          >
+            <Card
+              className={`text-center h-full ${
+                tier.highlight ? 'border-2 border-[var(--ip-teal)]' : ''
+              } ${tier.comingSoon ? 'relative' : ''}`}
+            >
+              {tier.comingSoon && (
+                <div className="absolute top-2 right-2">
+                  <span className="text-xs bg-[var(--ip-muted)] text-white px-2 py-1 rounded">Coming Soon</span>
+                </div>
+              )}
+              <h3 className="text-xl font-bold mb-2">{tier.label}</h3>
+              <div className="text-4xl font-bold mb-1">
+                {tier.price}
+                {tier.period && <span className="text-lg text-[var(--ip-muted)]">{tier.period}</span>}
+              </div>
+              <ul className="text-left space-y-2 mb-6 mt-4">
+                {tier.bullets.map((bullet, bulletIdx) => (
+                  <li key={bulletIdx} className="flex items-start gap-2">
+                    <span className="text-[var(--ip-teal)]">✓</span>
+                    <span className="text-sm">{bullet}</span>
+                  </li>
+                ))}
+              </ul>
+              <Button
+                href={
+                  tier.id === 'business_custom'
+                    ? '/contact'
+                    : 'https://platform.intelliprop.com.au'
+                }
+                variant={tier.highlight ? 'primary' : 'secondary'}
+                className="w-full"
+              >
+                {tier.cta}
+              </Button>
+            </Card>
+          </motion.div>
+        ))}
       </motion.div>
 
       <motion.div
@@ -75,4 +82,3 @@ export default function Pricing() {
     </Section>
   );
 }
-
