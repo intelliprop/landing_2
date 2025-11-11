@@ -9,9 +9,9 @@ import Card from '@/components/ui/Card';
 
 const icons = {
   collect: '📍',
-  analyse: '🤖',
+  analyse: '🔍',
   research: '📊',
-  report: '📄',
+  report: '✅',
 };
 
 export default function HowItWorks() {

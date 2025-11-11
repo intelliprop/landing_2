@@ -1,72 +1,72 @@
 /**
  * Centralized copy for landing page
- * Helps with localization and A/B testing later
+ * B2C-friendly, simple language for everyday property buyers
  */
 
 export const copy = {
   hero: {
     lines: [
-      'AI that understands property.',
-      'Insights that move markets.',
+      'Know if a property is right for you.',
+      'Before you make an offer.',
       'intelliprop.',
     ],
-    sub: 'intelliprop turns complex market data into simple, decision-ready insights — built by brokers, for buyers.',
-    ctaPrimary: 'Generate report',
+    sub: 'Get a clear, easy-to-understand report on any property in minutes. No confusing jargon — just the facts you need to make a smart decision.',
+    ctaPrimary: 'Get my report',
     ctaGhost: 'See how it works',
   },
   mission: {
     title: 'our mission',
-    body: 'To make property intelligence simple, human, and fast.',
-    sub: 'Every property has a story. intelliprop makes it clear — powered by data, told by AI.',
-    emphasized: ['simple', 'human', 'fast'],
+    body: 'To make buying property simple, clear, and stress-free.',
+    sub: 'Buying a home or investment property is a big decision. We give you the information you need, in plain English, so you can feel confident.',
+    emphasized: ['simple', 'clear', 'stress-free'],
   },
   howItWorks: {
     title: 'How it works',
     steps: [
       {
         id: 'collect',
-        title: 'collect',
-        description: 'Enter an address or suburb.',
+        title: 'Tell us the address',
+        description: 'Just paste the property address or tell us the suburb you\'re interested in.',
       },
       {
         id: 'analyse',
-        title: 'analyse',
-        description: 'AI evaluates growth, yield, livability.',
+        title: 'We check everything',
+        description: 'Our system looks at prices, rental potential, growth trends, and the local area.',
       },
       {
         id: 'research',
-        title: 'research',
-        description: 'We fetch market signals and trends.',
+        title: 'We gather the facts',
+        description: 'We pull together recent sales, rental prices, and what\'s happening in the area.',
       },
       {
         id: 'report',
-        title: 'report',
-        description: 'You get a human-readable, narrative report.',
+        title: 'You get your report',
+        description: 'A simple report that tells you if it\'s a good buy, what to watch out for, and what similar properties sold for.',
       },
     ],
   },
   intelliscore: {
-    title: 'Meet intelliscore — the smarter way to measure property fit.',
-    sub: 'Each report includes an intelliscore — an AI-calculated alignment between your goals and market reality.',
-    dimensions: ['growth', 'livability', 'yield', 'risk'],
+    title: 'Your intelliscore — a simple score that tells you if a property is right for you.',
+    sub: 'Every report includes your intelliscore — a number from 0 to 100 that shows how well a property matches what you\'re looking for. The higher the score, the better the fit.',
+    dimensions: ['growth potential', 'good place to live', 'rental income', 'things to watch'],
   },
   testimonials: {
-    title: 'Trusted by property professionals',
+    title: 'What people are saying',
     items: [
       {
-        quote: 'intelliprop transformed how we evaluate properties. The insights are spot-on and save us hours.',
-        name: 'Sarah Chen',
-        role: 'Buyers Agent',
+        quote: 'I had no idea how to tell if a property was a good deal. intelliprop made it so simple — I finally understood what I was looking at.',
+        name: 'Alex M.',
+        role: 'First home buyer',
       },
       {
-        quote: 'As a broker, I rely on intelliprop to give my clients clear, data-driven recommendations.',
-        name: 'Michael Torres',
-        role: 'Broker at inovayt',
+        quote: 'The report saved me from making a bad decision. It showed me things I never would have thought to check.',
+        name: 'Jordan K.',
+        role: 'Property buyer',
       },
       {
-        quote: 'The intelliscore alone is worth it. It aligns perfectly with our investment criteria.',
-        name: 'Emma Wilson',
-        role: 'Property Investor',
+        quote: 'I love how easy it is to understand. No confusing charts or numbers — just clear answers to my questions.',
+        name: 'Sam T.',
+        role: 'Property investor',
       },
     ],
   },
@@ -77,12 +77,12 @@ export const copy = {
       price: '$19',
       period: 'per report',
       bullets: [
-        'One-time property report',
-        'Full intelliscore breakdown',
-        'Market comparables',
-        'Risk assessment',
+        'One property report',
+        'Your intelliscore score',
+        'What similar properties sold for',
+        'Things to watch out for',
       ],
-      cta: 'Start now',
+      cta: 'Get started',
     },
     brokers: {
       title: 'For brokers & advisors',
@@ -98,8 +98,8 @@ export const copy = {
     },
     trust: [
       'used by top brokers at inovayt',
-      'reports generated in under 3 minutes',
-      'powered by real market data and AI',
+      'reports ready in under 3 minutes',
+      'real property data you can trust',
     ],
   },
   footer: {
@@ -112,4 +112,3 @@ export const copy = {
     },
   },
 } as const;
-
