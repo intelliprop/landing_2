@@ -23,7 +23,7 @@ export default function GettingStartedGuide() {
               intelliprop is an AI‑powered property intelligence platform that transforms complex market data into clear, actionable insights. Whether you're buying your first home, expanding your investment portfolio, or advising clients, intelliprop delivers comprehensive property analysis in minutes—not days.
             </p>
             <p className="text-muted dark:text-dark-muted leading-relaxed">
-              Our proprietary Intelliscore™ system evaluates properties across multiple dimensions: yield potential, growth prospects, livability factors, and risk assessment. Every report is built for reliability, transparency, and professional‑grade quality.
+              Our proprietary intelliscore™ system evaluates properties across multiple dimensions: yield potential, growth prospects, livability factors, and risk assessment. Every report is built for reliability, transparency, and professional‑grade quality.
             </p>
           </section>
 
@@ -47,7 +47,7 @@ export default function GettingStartedGuide() {
               <div className="flex gap-4">
                 <div className="flex-shrink-0 w-8 h-8 rounded-full bg-primary text-white flex items-center justify-center font-bold">3</div>
                 <div>
-                  <h3 className="font-semibold mb-1 text-ink dark:text-dark-ink">Receive your Intelliscore™</h3>
+                  <h3 className="font-semibold mb-1 text-ink dark:text-dark-ink">Receive your intelliscore™</h3>
                   <p className="text-muted dark:text-dark-muted text-sm">Within minutes, you'll receive a comprehensive report including an executive summary, market comparables, risk bands, yield analysis, and actionable recommendations.</p>
                 </div>
               </div>

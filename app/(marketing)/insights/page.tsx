@@ -15,7 +15,7 @@ const articles = [
     category: 'guides'
   },
   {
-    title: 'Understanding Intelliscore™',
+    title: 'Understanding intelliscore™',
     slug: 'understanding-intelliscore',
     description: 'Learn how our proprietary scoring system evaluates properties across yield, growth, livability, and risk dimensions.',
     category: 'guides'

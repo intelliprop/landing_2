@@ -1,7 +1,7 @@
 export const metadata = { title: 'FAQ — intelliprop' };
 
 const faqs = [
-  { q: 'What is Intelliscore™?', a: 'A 0–100 score blending yield, growth, livability, and risk into a unified scale.' },
+  { q: 'What is intelliscore™?', a: 'A 0–100 score blending yield, growth, livability, and risk into a unified scale.' },
   { q: 'How fast is a report?', a: 'Minutes. Our pipelines evaluate and compile instantly once you submit.' },
   { q: 'Do you store my data?', a: 'Privacy‑first. Insights are generated securely and not shared with third parties.' }
 ];

@@ -2,13 +2,31 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Theme tokens via CSS variables (light/dark aware) */
 :root {
   --radius: 10px;
+  --ip-bg: #ffffff;
+  --ip-fg: #0d1b2a;
+  --ip-teal: #00c4b3;
+  --ip-navy: #0d1b2a;
+  --ip-amber: #ffb600;
+  --ip-muted: #6b7b8c;
+  --ip-card: #f5f7f8;
+}
+
+.dark {
+  --ip-bg: #0b1320;
+  --ip-fg: #e6eef2;
+  --ip-teal: #00c4b3;
+  --ip-navy: #0d1b2a;
+  --ip-amber: #ffb600;
+  --ip-muted: #9fb0be;
+  --ip-card: #111a2a;
 }
 
 html, body {
-  @apply bg-bg text-ink antialiased;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  @apply bg-[var(--ip-bg)] text-[var(--ip-fg)] antialiased;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .dark html, .dark body {

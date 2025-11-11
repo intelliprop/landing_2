@@ -28,7 +28,8 @@ const config: Config = {
         }
       },
       fontFamily: {
-        sans: ['ui-sans-serif', 'system-ui', 'Segoe UI', 'Helvetica', 'Arial', 'Noto Sans', 'sans-serif']
+        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Helvetica', 'Arial', 'Noto Sans', 'sans-serif'],
+        display: ['Poppins', 'Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
       }
     }
   },

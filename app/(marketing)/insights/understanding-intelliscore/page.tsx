@@ -2,8 +2,8 @@ import Section from '@/components/Section';
 import Button from '@/components/Button';
 
 export const metadata = { 
-  title: 'Understanding IntelliScore™ — intelliprop',
-  description: 'Learn how IntelliScore™ works and how to interpret your property intelligence scores.'
+  title: 'Understanding intelliscore™ — intelliprop',
+  description: 'Learn how intelliscore™ works and how to interpret your property intelligence scores.'
 };
 
 export default function UnderstandingIntelliscore() {
