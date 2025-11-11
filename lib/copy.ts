@@ -21,27 +21,26 @@ export const copy = {
     emphasized: ['simple', 'clear', 'stress-free'],
   },
   howItWorks: {
-    title: 'How it works',
-    steps: [
+    title: 'Choose your report type',
+    subtitle: 'We offer three ways to get the property information you need:',
+    reportTypes: [
       {
-        id: 'collect',
-        title: 'Tell us the address',
-        description: 'Just paste the property address or tell us the suburb you\'re interested in.',
+        id: 'brief',
+        title: 'Property search brief',
+        description: 'Tell us what you\'re looking for and we\'ll show you a shortlist of properties that match. Perfect if you need help finding the right property.',
+        icon: '🔍',
       },
       {
-        id: 'analyse',
-        title: 'We check everything',
-        description: 'Our system looks at prices, rental potential, growth trends, and the local area.',
+        id: 'property',
+        title: 'Property analysis',
+        description: 'Paste a property address and get a detailed analysis. See if it\'s a good buy, what similar properties sold for, and what to watch out for.',
+        icon: '🏠',
       },
       {
-        id: 'research',
-        title: 'We gather the facts',
-        description: 'We pull together recent sales, rental prices, and what\'s happening in the area.',
-      },
-      {
-        id: 'report',
-        title: 'You get your report',
-        description: 'A simple report that tells you if it\'s a good buy, what to watch out for, and what similar properties sold for.',
+        id: 'suburb',
+        title: 'Suburb report',
+        description: 'Get insights on an entire suburb. See average prices, growth trends, rental potential, and what makes the area a good place to live or invest.',
+        icon: '📍',
       },
     ],
   },
@@ -97,7 +96,7 @@ export const copy = {
       cta: 'Book a demo',
     },
     trust: [
-      'used by top brokers at inovayt',
+      'trusted by property professionals',
       'reports ready in under 3 minutes',
       'real property data you can trust',
     ],
