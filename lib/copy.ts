@@ -142,7 +142,7 @@ export const copy = {
     ],
   },
   footer: {
-    tagline: 'built by brokers, powered by ai.',
+    tagline: 'Property insights that save you time and money.',
     links: {
       privacy: 'Privacy',
       terms: 'Terms',
