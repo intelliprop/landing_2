@@ -20,7 +20,7 @@ export default function ReportSelector() {
         </div>
         <div className="p-5 sm:p-6">
           <div className="text-lg sm:text-xl font-semibold mb-2 text-ink dark:text-dark-ink">Address report.</div>
-          <p className="text-muted dark:text-dark-muted mb-4 text-sm sm:text-base">Enter a property address for detailed intelliprop analysis and scoring. Address entry.</p>
+          <p className="text-muted dark:text-dark-muted mb-4 text-sm sm:text-base">Enter a property address for detailed intelliprop® analysis and scoring. Address entry.</p>
           <Button href="#" variant="secondary">Enter address</Button>
         </div>
       </div>

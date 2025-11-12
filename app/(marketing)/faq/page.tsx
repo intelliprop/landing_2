@@ -1,4 +1,4 @@
-export const metadata = { title: 'FAQ — intelliprop' };
+export const metadata = { title: 'FAQ — intelliprop®' };
 
 const faqs = [
   { q: 'What is intelliscore™?', a: 'A 0–100 score blending yield, growth, livability, and risk into a unified scale.' },

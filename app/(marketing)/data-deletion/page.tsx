@@ -2,8 +2,8 @@ import Section from '@/components/Section';
 import Button from '@/components/Button';
 
 export const metadata = { 
-  title: 'Data Deletion — intelliprop',
-  description: 'Instructions for requesting data deletion from intelliprop.'
+  title: 'Data Deletion — intelliprop®',
+  description: 'Instructions for requesting data deletion from intelliprop®.'
 };
 
 export default function DataDeletionPage() {

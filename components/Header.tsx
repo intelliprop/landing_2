@@ -45,7 +45,7 @@ export default function Header() {
               <Image src="/applogo-dark.png" alt="intelliprop" width={28} height={28} className="object-contain" />
             </span>
           </span>
-          <span className="font-semibold text-lg sm:text-xl">intelliprop</span>
+          <span className="font-semibold text-lg sm:text-xl">intelliprop®</span>
         </Link>
         
         {/* Desktop Navigation */}

@@ -2,7 +2,7 @@ import Section from '@/components/Section';
 import Button from '@/components/Button';
 
 export const metadata = { 
-  title: 'Benefits for Property Investors — intelliprop',
+  title: 'Benefits for Property Investors — intelliprop®',
   description: 'Discover how IntelliProp helps property investors make faster, smarter investment decisions with data-driven insights.'
 };
 
@@ -10,7 +10,7 @@ export default function BenefitsForInvestors() {
   return (
     <>
       <Section className="text-center">
-        <h1 className="h1">why investors choose intelliprop</h1>
+        <h1 className="h1">why investors choose intelliprop®</h1>
         <p className="lead mt-3 max-w-2xl mx-auto">accelerate your property investment strategy with instant, comprehensive property intelligence.</p>
       </Section>
 
@@ -19,7 +19,7 @@ export default function BenefitsForInvestors() {
           <section className="space-y-4">
             <h2 className="h2 text-ink dark:text-dark-ink">save time and make faster decisions</h2>
             <p className="text-muted dark:text-dark-muted leading-relaxed">
-              traditional property research can take days or weeks. intelliprop delivers comprehensive property analysis in minutes, allowing you to evaluate more opportunities and move quickly on promising deals. no more waiting for manual research or sifting through multiple data sources.
+              traditional property research can take days or weeks. intelliprop® delivers comprehensive property analysis in minutes, allowing you to evaluate more opportunities and move quickly on promising deals. no more waiting for manual research or sifting through multiple data sources.
             </p>
             <div className="grid sm:grid-cols-2 gap-4 mt-4">
               <div className="p-4 rounded-xl bg-bgAlt dark:bg-dark-bgAlt border border-border dark:border-dark-border">
@@ -145,13 +145,13 @@ export default function BenefitsForInvestors() {
             <div className="space-y-3">
               <div className="p-4 rounded-xl bg-bgAlt dark:bg-dark-bgAlt border border-border dark:border-dark-border">
                 <p className="text-sm text-muted dark:text-dark-muted italic mb-2">
-                  "intelliprop helped me evaluate 15 properties in a single day. i found three excellent opportunities i would have missed otherwise, and saved weeks of research time."
+                  "intelliprop® helped me evaluate 15 properties in a single day. i found three excellent opportunities i would have missed otherwise, and saved weeks of research time."
                 </p>
                 <p className="text-xs text-muted dark:text-dark-muted">— property investor, sydney</p>
               </div>
               <div className="p-4 rounded-xl bg-bgAlt dark:bg-dark-bgAlt border border-border dark:border-dark-border">
                 <p className="text-sm text-muted dark:text-dark-muted italic mb-2">
-                  "the yield analysis is spot-on. i use intelliprop reports to validate my own research and present to lenders. it's become an essential part of my investment process."
+                  "the yield analysis is spot-on. i use intelliprop® reports to validate my own research and present to lenders. it's become an essential part of my investment process."
                 </p>
                 <p className="text-xs text-muted dark:text-dark-muted">— portfolio investor, melbourne</p>
               </div>

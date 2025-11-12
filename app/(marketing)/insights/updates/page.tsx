@@ -1,7 +1,7 @@
-export const metadata = { title: 'Updates — intelliprop' };
+export const metadata = { title: 'Updates — intelliprop®' };
 
 const updates = [
-  { slug: 'launch', title: 'beta launch', summary: 'introducing intelliprop reports with the intelliscore™ system.' },
+  { slug: 'launch', title: 'beta launch', summary: 'introducing intelliprop® reports with the intelliscore™ system.' },
   { slug: 'pricing', title: 'pricing refresh', summary: 'updated plans for starters, professionals, and enterprise.' }
 ];
 

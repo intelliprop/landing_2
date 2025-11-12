@@ -9,7 +9,7 @@ export const copy = {
     lines: [
       'Understand what you\'re buying.',
       'Before you buy it.',
-      'intelliprop.',
+      'intelliprop®.',
     ],
     sub: 'Turn confusing property data into clear, visual insights. See a property\'s potential, risks, and fit for your goals — in plain English, in 3 minutes, for $19.',
     ctaPrimary: 'Get my report',
@@ -18,7 +18,7 @@ export const copy = {
   mission: {
     title: 'our mission',
     body: 'We help everyday Australians — first-home buyers and early investors — understand what they\'re buying before they buy.',
-    sub: 'We do this by turning confusing property data into clear, visual, human-readable insights that reveal a property\'s potential, risks, and fit for their goals. intelliprop makes property research clear, fast, and at a fraction of the cost of a buyer\'s agent.',
+    sub: 'We do this by turning confusing property data into clear, visual, human-readable insights that reveal a property\'s potential, risks, and fit for their goals. intelliprop® makes property research clear, fast, and at a fraction of the cost of a buyer\'s agent.',
     emphasized: ['clear', 'fast', 'affordable'],
   },
   howItWorks: {
@@ -46,15 +46,15 @@ export const copy = {
     ],
   },
   intelliscore: {
-    title: 'Your intelliscore — one clear number that tells you if a property fits your goals.',
-    sub: 'Every report includes your intelliscore — a score from 0 to 100 that shows how well a property matches what you\'re looking for. No confusing spreadsheets or conflicting advice. Just one clear answer.',
+    title: 'Your intelliscore™ — one clear number that tells you if a property fits your goals.',
+    sub: 'Every report includes your intelliscore™ — a score from 0 to 100 that shows how well a property matches what you\'re looking for. No confusing spreadsheets or conflicting advice. Just one clear answer.',
     dimensions: ['growth potential', 'good place to live', 'rental income', 'things to watch'],
   },
   testimonials: {
     title: 'What people are saying',
     items: [
       {
-        quote: 'I was so overwhelmed trying to figure out if a property was worth it. intelliprop gave me one clear answer instead of hours of confusing research.',
+        quote: 'I was so overwhelmed trying to figure out if a property was worth it. intelliprop® gave me one clear answer instead of hours of confusing research.',
         name: 'Alex M.',
         role: 'First home buyer',
       },

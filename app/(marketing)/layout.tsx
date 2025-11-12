@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Footer from '@/components/sections/Footer';
 
 export const metadata = {
-  title: 'intelliprop',
+  title: 'intelliprop®',
   description: 'Property intelligence, instantly. Turn any address or brief into a clear, decision-ready report in minutes—not days.',
   icons: [
     { rel: 'icon', url: '/applogo.png', media: '(prefers-color-scheme: light)' },

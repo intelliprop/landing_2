@@ -8,7 +8,7 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
           <div>
             <Link href="/" className="text-2xl font-semibold text-[var(--ip-teal)]">
-              intelliprop
+              intelliprop®
             </Link>
             <p className="text-sm text-[var(--ip-muted)] mt-2">{copy.footer.tagline}</p>
           </div>

@@ -1,7 +1,7 @@
 import Section from '@/components/Section';
 import Button from '@/components/Button';
 
-export const metadata = { title: 'Contact — intelliprop' };
+export const metadata = { title: 'Contact — intelliprop®' };
 
 export default function ContactPage() {
   return (

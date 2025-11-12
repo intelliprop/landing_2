@@ -1,8 +1,8 @@
 import Section from '@/components/Section';
 
 export const metadata = { 
-  title: 'Privacy Policy — intelliprop',
-  description: 'Privacy policy for intelliprop property intelligence platform.'
+  title: 'Privacy Policy — intelliprop®',
+  description: 'Privacy policy for intelliprop® property intelligence platform.'
 };
 
 export default function PrivacyPage() {
@@ -15,7 +15,7 @@ export default function PrivacyPage() {
           
           <section>
             <h2 className="h2 mb-3 text-ink">1. introduction</h2>
-            <p>intelliprop ("we," "our," or "us") is committed to protecting your privacy. this privacy policy explains how we collect, use, disclose, and safeguard your information when you use our property intelligence platform.</p>
+            <p>intelliprop® ("we," "our," or "us") is committed to protecting your privacy. this privacy policy explains how we collect, use, disclose, and safeguard your information when you use our property intelligence platform.</p>
           </section>
 
           <section>

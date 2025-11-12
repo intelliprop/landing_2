@@ -1,8 +1,8 @@
 import Section from '@/components/Section';
 
 export const metadata = { 
-  title: 'Terms of Service — intelliprop',
-  description: 'Terms of service for intelliprop property intelligence platform.'
+  title: 'Terms of Service — intelliprop®',
+  description: 'Terms of service for intelliprop® property intelligence platform.'
 };
 
 export default function TermsPage() {
@@ -15,12 +15,12 @@ export default function TermsPage() {
           
           <section>
             <h2 className="h2 mb-3 text-ink">1. acceptance of terms</h2>
-            <p>by accessing or using intelliprop's services, you agree to be bound by these terms of service. if you disagree with any part of these terms, you may not access the service.</p>
+            <p>by accessing or using intelliprop®'s services, you agree to be bound by these terms of service. if you disagree with any part of these terms, you may not access the service.</p>
           </section>
 
           <section>
             <h2 className="h2 mb-3 text-ink">2. description of service</h2>
-            <p>intelliprop provides property intelligence and analysis services, including intelliscore™ assessments, market comparables, risk analysis, and yield calculations. our services are provided "as is" and we make no warranties regarding the accuracy or completeness of the information provided.</p>
+            <p>intelliprop® provides property intelligence and analysis services, including intelliscore™ assessments, market comparables, risk analysis, and yield calculations. our services are provided "as is" and we make no warranties regarding the accuracy or completeness of the information provided.</p>
           </section>
 
           <section>
@@ -47,17 +47,17 @@ export default function TermsPage() {
 
           <section>
             <h2 className="h2 mb-3 text-ink">6. intellectual property</h2>
-            <p>all content, features, and functionality of the service, including intelliscore™, are owned by intelliprop and are protected by copyright, trademark, and other intellectual property laws. you may not use our trademarks or logos without our prior written consent.</p>
+            <p>all content, features, and functionality of the service, including intelliscore™, are owned by intelliprop® and are protected by copyright, trademark, and other intellectual property laws. you may not use our trademarks or logos without our prior written consent.</p>
           </section>
 
           <section>
             <h2 className="h2 mb-3 text-ink">7. disclaimers</h2>
-            <p>intelliprop provides property intelligence for informational purposes only. our reports are not a substitute for professional legal, financial, or real estate advice. we do not guarantee the accuracy, completeness, or timeliness of any information provided.</p>
+            <p>intelliprop® provides property intelligence for informational purposes only. our reports are not a substitute for professional legal, financial, or real estate advice. we do not guarantee the accuracy, completeness, or timeliness of any information provided.</p>
           </section>
 
           <section>
             <h2 className="h2 mb-3 text-ink">8. limitation of liability</h2>
-            <p>to the maximum extent permitted by law, intelliprop shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of the service.</p>
+            <p>to the maximum extent permitted by law, intelliprop® shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of the service.</p>
           </section>
 
           <section>

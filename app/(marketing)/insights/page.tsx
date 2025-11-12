@@ -3,15 +3,15 @@ import Button from '@/components/Button';
 import Link from 'next/link';
 
 export const metadata = { 
-  title: 'Insights — intelliprop',
-  description: 'Guides, tutorials, and insights on using intelliprop for smarter property decisions.'
+  title: 'Insights — intelliprop®',
+  description: 'Guides, tutorials, and insights on using intelliprop® for smarter property decisions.'
 };
 
 const articles = [
   {
-    title: 'Getting started with intelliprop',
+    title: 'Getting started with intelliprop®',
     slug: 'getting-started-guide',
-    description: 'Complete guide to using intelliprop for smarter property decisions. Learn how to generate reports and interpret results.',
+    description: 'Complete guide to using intelliprop® for smarter property decisions. Learn how to generate reports and interpret results.',
     category: 'guides'
   },
   {
@@ -23,7 +23,7 @@ const articles = [
   {
     title: 'Benefits for property investors',
     slug: 'benefits-for-investors',
-    description: 'Discover how intelliprop helps investors make faster, smarter decisions with comprehensive property intelligence.',
+    description: 'Discover how intelliprop® helps investors make faster, smarter decisions with comprehensive property intelligence.',
     category: 'benefits'
   }
 ];

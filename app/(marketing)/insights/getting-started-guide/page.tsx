@@ -3,24 +3,24 @@ import Button from '@/components/Button';
 import Link from 'next/link';
 
 export const metadata = { 
-  title: 'Getting started with intelliprop — intelliprop',
-  description: 'Learn how to use intelliprop to generate property intelligence reports and make informed property decisions.'
+  title: 'Getting started with intelliprop® — intelliprop®',
+  description: 'Learn how to use intelliprop® to generate property intelligence reports and make informed property decisions.'
 };
 
 export default function GettingStartedGuide() {
   return (
     <>
       <Section className="text-center">
-        <h1 className="h1">Getting started with intelliprop</h1>
-        <p className="lead mt-3 max-w-2xl mx-auto">Your complete guide to using intelliprop for smarter property decisions.</p>
+        <h1 className="h1">Getting started with intelliprop®</h1>
+        <p className="lead mt-3 max-w-2xl mx-auto">Your complete guide to using intelliprop® for smarter property decisions.</p>
       </Section>
 
       <Section>
         <div className="max-w-3xl mx-auto space-y-8">
           <section className="space-y-4">
-            <h2 className="h2 text-ink dark:text-dark-ink">What is intelliprop?</h2>
+            <h2 className="h2 text-ink dark:text-dark-ink">What is intelliprop®?</h2>
             <p className="text-muted dark:text-dark-muted leading-relaxed">
-              intelliprop is an AI‑powered property intelligence platform that transforms complex market data into clear, actionable insights. Whether you're buying your first home, expanding your investment portfolio, or advising clients, intelliprop delivers comprehensive property analysis in minutes—not days.
+              intelliprop® is an AI‑powered property intelligence platform that transforms complex market data into clear, actionable insights. Whether you're buying your first home, expanding your investment portfolio, or advising clients, intelliprop® delivers comprehensive property analysis in minutes—not days.
             </p>
             <p className="text-muted dark:text-dark-muted leading-relaxed">
               Our proprietary intelliscore™ system evaluates properties across multiple dimensions: yield potential, growth prospects, livability factors, and risk assessment. Every report is built for reliability, transparency, and professional‑grade quality.
@@ -73,7 +73,7 @@ export default function GettingStartedGuide() {
           </section>
 
           <section className="space-y-4">
-            <h2 className="h2 text-ink dark:text-dark-ink">Who benefits from intelliprop?</h2>
+            <h2 className="h2 text-ink dark:text-dark-ink">Who benefits from intelliprop®?</h2>
             <div className="grid sm:grid-cols-2 gap-4">
               <div className="p-4 rounded-xl bg-bgAlt dark:bg-dark-bgAlt border border-border dark:border-dark-border">
                 <h3 className="font-semibold mb-2 text-primary">First‑home buyers</h3>
