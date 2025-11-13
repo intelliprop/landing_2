@@ -1,0 +1,21 @@
+<svg width="1600" height="640" viewBox="0 0 1600 640" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Minimal abstract hero in brand colors">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#F5F7F8"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#E5E7EB" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="100%" height="100%" fill="url(#g)"/>
+  <rect width="100%" height="100%" fill="url(#grid)" opacity="0.35"/>
+  <g opacity="0.9">
+    <circle cx="200" cy="120" r="60" fill="#00C4B3" opacity="0.12"/>
+    <circle cx="1400" cy="520" r="90" fill="#00C4B3" opacity="0.12"/>
+  </g>
+  <g>
+    <path d="M200 500 L300 420 L400 470 L550 350 L700 430 L900 300 L1100 380" fill="none" stroke="#0D1B2A" stroke-opacity="0.15" stroke-width="4"/>
+  </g>
+</svg>
+

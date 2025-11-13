@@ -5,15 +5,16 @@ type Props = {
   lead?: string;
   children?: ReactNode;
   className?: string;
+  id?: string;
 } & HTMLAttributes<HTMLDivElement>;
 
-export default function Section({ title, lead, children, className = '', ...rest }: Props) {
+export default function Section({ title, lead, children, className = '', id, ...rest }: Props) {
   return (
-    <section className={`container-page py-16 md:py-24 ${className}`} {...rest}>
+    <section id={id} className={`container-page py-8 sm:py-12 md:py-16 lg:py-20 ${className}`} {...rest}>
       {(title || lead) && (
-        <div className="mb-10 max-w-3xl">
-          {title && <h2 className="h2 mb-3">{title}</h2>}
-          {lead && <p className="lead">{lead}</p>}
+        <div className="mb-6 sm:mb-8 max-w-3xl">
+          {title && <h2 className="h2 mb-2 sm:mb-3">{title}</h2>}
+          {lead && <p className="lead text-base sm:text-lg">{lead}</p>}
         </div>
       )}
       {children}

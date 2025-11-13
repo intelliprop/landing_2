@@ -1,33 +1,36 @@
-# ---- deps & build ----
+# Stage 1: Dependencies
 FROM node:20-alpine AS deps
 WORKDIR /app
-COPY package.json pnpm-lock.yaml* yarn.lock* package-lock.json* ./
-RUN \
-  if [ -f pnpm-lock.yaml ]; then corepack enable && corepack prepare pnpm@latest --activate && pnpm i --frozen-lockfile; \
-  elif [ -f yarn.lock ]; then yarn --frozen-lockfile; \
-  else npm install; fi
+COPY package.json package-lock.json* ./
+RUN npm ci
 
-FROM node:20-alpine AS build
+# Stage 2: Builder
+FROM node:20-alpine AS builder
 WORKDIR /app
 COPY --from=deps /app/node_modules ./node_modules
 COPY . .
-RUN \
-  if [ -f pnpm-lock.yaml ]; then corepack enable && corepack prepare pnpm@latest --activate && pnpm build; \
-  elif [ -f yarn.lock ]; then yarn build; \
-  else npm run build; fi
+RUN npm run build
 
-# ---- runtime ----
+# Stage 3: Runner
 FROM node:20-alpine AS runner
-ENV NODE_ENV=production
 WORKDIR /app
 
-# use standalone output from Next.js
-COPY --from=build /app/.next/standalone ./
-COPY --from=build /app/.next/static ./.next/static
-COPY --from=build /app/public ./public
+ENV NODE_ENV=production
+
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
+
+COPY --from=builder /app/public ./public
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
+USER nextjs
 
 EXPOSE 3000
+
 ENV PORT=3000
+ENV HOSTNAME="0.0.0.0"
+
 CMD ["node", "server.js"]
 
 

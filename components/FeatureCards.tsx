@@ -1,12 +1,26 @@
-type Card = { title: string; body: string; };
+import Image from 'next/image';
+
+type Card = { title: string; body: string; image?: string; };
+
+const defaultImages = ['/min-brief.svg', '/min-analytics.svg', '/min-investment.svg'];
 
 export default function FeatureCards({ cards }: { cards: Card[] }) {
   return (
-    <div className="grid md:grid-cols-3 gap-8">
-      {cards.map((c) => (
-        <div key={c.title} className="rounded-xl bg-bgAlt p-6">
-          <div className="text-primary font-semibold mb-2">{c.title}</div>
-          <p className="text-muted leading-relaxed">{c.body}</p>
+    <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+      {cards.map((c, index) => (
+        <div key={c.title} className="rounded-xl bg-bgAlt dark:bg-dark-bgAlt overflow-hidden border border-border dark:border-dark-border transition-transform hover:scale-[1.02] hover:shadow-md will-change-transform">
+          <div className="relative h-36 sm:h-40 w-full anim-in">
+            <Image 
+              src={c.image || defaultImages[index] || '/property-hero.jpg'} 
+              alt={c.title} 
+              fill
+              className="object-cover filter saturate-0 contrast-110"
+            />
+          </div>
+          <div className="p-4 sm:p-5">
+            <div className="text-primary font-semibold mb-2 text-base sm:text-lg">{c.title}</div>
+            <p className="text-muted dark:text-dark-muted leading-relaxed text-sm sm:text-base">{c.body}</p>
+          </div>
         </div>
       ))}
     </div>
