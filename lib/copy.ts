@@ -11,7 +11,7 @@ export const copy = {
       'Before you buy it.',
       'intelliprop®.',
     ],
-    sub: 'Turn confusing property data into clear, visual insights. See a property\'s potential, risks, and fit for your goals — in plain English, in 3 minutes, for $19.',
+    sub: 'Turn confusing property data into clear, visual insights. See a property\'s potential, risks, and fit for your goals — in plain English, in 5 minutes, at a fraction of the cost.',
     ctaPrimary: 'Get my report',
     ctaGhost: 'See how it works',
   },
