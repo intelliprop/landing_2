@@ -49,10 +49,24 @@ export default function Hero() {
             animate="visible"
             variants={fadeInUp}
             transition={getTransition(0.5, 0.2)}
-            className="lead max-w-2xl mx-auto mb-8"
+            className="lead max-w-2xl mx-auto mb-4"
           >
             {copy.hero.sub}
           </motion.p>
+
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            transition={getTransition(0.5, 0.25)}
+            className="mb-8"
+          >
+            <p className="text-sm text-[var(--ip-muted)] max-w-2xl mx-auto">
+              <span className="inline-block px-3 py-1 bg-[var(--ip-teal)]/10 text-[var(--ip-teal)] rounded-full border border-[var(--ip-teal)]/20 font-medium">
+                Currently in Closed Beta
+              </span>
+            </p>
+          </motion.div>
 
           <motion.div
             initial="hidden"

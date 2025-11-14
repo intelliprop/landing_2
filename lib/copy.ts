@@ -29,19 +29,19 @@ export const copy = {
         id: 'brief',
         title: 'Property search brief',
         description: 'Tell us what you\'re looking for and we\'ll shortlist properties that match. Perfect if you don\'t know where to start your search.',
-        icon: '🔍',
+        icon: '', // Now using SVG icons instead
       },
       {
         id: 'property',
         title: 'Property analysis',
         description: 'Paste a property address and get a clear analysis. See if it\'s a good buy, what similar properties sold for, and what to watch out for.',
-        icon: '🏠',
+        icon: '', // Now using SVG icons instead
       },
       {
         id: 'suburb',
         title: 'Suburb report',
         description: 'Get insights on an entire suburb. See average prices, growth trends, rental potential, and what makes the area a good place to live or invest.',
-        icon: '📍',
+        icon: '', // Now using SVG icons instead
       },
     ],
   },
@@ -79,9 +79,10 @@ export const copy = {
         price: '$0',
         period: '',
         bullets: [
-          '1 report (watermarked)',
+          '1 free report (watermarked)',
+          'No credit card required',
         ],
-        cta: 'Try for Free',
+        cta: 'Get Your Free Report',
         highlight: false,
         comingSoon: false,
       },
