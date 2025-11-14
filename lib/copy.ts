@@ -138,7 +138,7 @@ export const copy = {
     ],
     trust: [
       'clear, fast, and affordable',
-      'reports ready in under 3 minutes',
+      'reports ready in under 10 minutes',
       'unbiased insights you can trust',
     ],
   },

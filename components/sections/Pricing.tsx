@@ -28,39 +28,43 @@ export default function Pricing() {
             className={tier.comingSoon ? 'opacity-60' : ''}
           >
             <Card
-              className={`text-center h-full ${
+              className={`text-center h-full flex flex-col ${
                 tier.highlight ? 'border-2 border-[var(--ip-teal)]' : ''
               } ${tier.comingSoon ? 'relative' : ''}`}
             >
-              {tier.comingSoon && (
-                <div className="absolute top-2 right-2">
-                  <span className="text-xs bg-[var(--ip-muted)] text-white px-2 py-1 rounded">Coming Soon</span>
+              <div className="flex-1">
+                {tier.comingSoon && (
+                  <div className="mb-2">
+                    <span className="text-xs bg-[var(--ip-muted)] text-white px-2 py-1 rounded">Coming Soon</span>
+                  </div>
+                )}
+                <h3 className="text-xl font-bold mb-2">{tier.label}</h3>
+                <div className="text-4xl font-bold mb-1">
+                  {tier.price}
+                  {tier.period && <span className="text-lg text-[var(--ip-muted)]">{tier.period}</span>}
                 </div>
-              )}
-              <h3 className="text-xl font-bold mb-2">{tier.label}</h3>
-              <div className="text-4xl font-bold mb-1">
-                {tier.price}
-                {tier.period && <span className="text-lg text-[var(--ip-muted)]">{tier.period}</span>}
+                <ul className="text-left space-y-2 mb-6 mt-4">
+                  {tier.bullets.map((bullet, bulletIdx) => (
+                    <li key={bulletIdx} className="flex items-start gap-2">
+                      <span className="text-[var(--ip-teal)]">✓</span>
+                      <span className="text-sm">{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
               </div>
-              <ul className="text-left space-y-2 mb-6 mt-4">
-                {tier.bullets.map((bullet, bulletIdx) => (
-                  <li key={bulletIdx} className="flex items-start gap-2">
-                    <span className="text-[var(--ip-teal)]">✓</span>
-                    <span className="text-sm">{bullet}</span>
-                  </li>
-                ))}
-              </ul>
-              <Button
-                href={
-                  tier.id === 'business_custom'
-                    ? '/contact'
-                    : 'https://platform.intelliprop.com.au'
-                }
-                variant={tier.highlight ? 'primary' : 'secondary'}
-                className="w-full"
-              >
-                {tier.cta}
-              </Button>
+              <div className="mt-auto">
+                <Button
+                  href={
+                    tier.id === 'business_custom'
+                      ? '/contact'
+                      : 'https://platform.intelliprop.com.au'
+                  }
+                  variant={tier.highlight ? 'primary' : 'secondary'}
+                  className="w-full"
+                >
+                  {tier.cta}
+                </Button>
+              </div>
             </Card>
           </motion.div>
         ))}
